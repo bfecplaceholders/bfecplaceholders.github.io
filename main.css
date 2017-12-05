@@ -1,0 +1,240 @@
+article,
+aside,
+div,
+footer,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+nav,
+body,
+head,
+img,
+section,
+figure,
+a,
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* import font */
+
+@font-face {
+    font-family: "Montserrat-ExtraBold";  
+    src: url("fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";  
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";  
+    src: url("fonts/Montserrat-Medium.ttf");
+}
+
+header {
+    font-family: "Montserrat-ExtraBold";
+    font-size: 45px;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+.title {
+    float: right;
+    width: 50%;
+    font-size: 70%;
+    text-align: right;
+    padding-top: 10%
+}
+
+.logo {
+    width: 125px;
+}
+
+body {
+    font-family: "Montserrat-Regular";
+}
+
+.text {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    padding: 2%;
+    text-align: justify;
+    font-size: 100%;
+}
+
+form {
+    margin: auto;
+    box-sizing: border-box;
+    width: 90%;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    padding-bottom: 40px;border-radius: 3px;
+    h1 {
+        box-sizing: border-box;
+        padding: 20px;
+     }
+}
+
+.userinput {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 2%;
+    text-align: center;
+}
+
+
+.userinput h2 {
+    font-family: "Montserrat-Regular";
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 3%;
+    font-size: 100%;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.userinput input {
+    margin-top: 5%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2%;
+}
+
+.userinput input:focus {
+    outline: none;
+}
+
+.userinput button {
+    margin-top: 5%;
+    margin-bottom: -10%;
+    background-color: #1976D2;
+    border: none;
+    color: #FFFFFF;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+#q5, #q2 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+    header {
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 10%;
+    }
+
+    .title {
+        float: right;
+        width: 50%;
+        font-size: 100%;
+        text-align: right;
+        padding: 0;
+    }   
+    
+    .logo {
+        width: 25%;
+    }
+    
+    body {
+        font-size: 100%;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    
+    .userinput h2 {
+        font-size: 100%;
+        text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+    }
+    
+    .userinput input {
+        width: 25%;
+        font-size: 100%;
+    }
+    
+    .userinput button {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 3%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+    padding-left: 15%;
+    padding-top: 7%;
+    padding-right: 15%;
+    }
+
+    .title {
+        float: right;
+        width: 50%;
+        font-size: 100%;
+        text-align: right;
+        padding: 0;
+    }   
+    
+    .logo {
+        width: 200px;
+    }
+    
+    body {
+        font-size: 110%;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    
+    .userinput h2 {
+        text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+        font-size: 100%;
+    }
+    
+    .userinput input {
+        width: 30%;
+        padding: 1%;
+        font-size: 100%;
+    }
+    
+    .userinput button {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 3%;
+    }   
+}

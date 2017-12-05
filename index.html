@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Where's Jesus</title>
+    <!-- viewport-->
+    <meta name="viewport" content="width=device-width">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="main.css">
+    <!-- website icon -->
+    <link rel="icon" href="icon.ico" type="image/ico" sizes="16x16">
+    
+</head>
+<body>
+    <section>
+        <header>
+            <a href="index.html"><img class="logo" src="logo.png"></a>
+            <h2 class='title'>WHERE'S<br>JESUS?</h2>
+        </header>
+    </section>
+
+    <section class="container">
+        <p class="text">
+            Around 2000 years ago, God sent the angel Gabriel to Mary. Mary was a virgin engaged to marry Joseph. The angel said to her, 'God has given you a baby boy, and you will call him Jesus. He will be God's own Son and his kingdom will never end.' At the same time, Joseph had to go register at a town called Bethlehem in Judea. So Joseph and Mary made a long journey to Bethlehem, and Mary was pregnant with Jesus.
+        </p>
+
+        <section class="userinput">
+            <form onsubmit="return false;">
+                <h2>
+                    <strong>Find Jesus as an unborn baby in Mary's womb.</strong>
+                </h2>
+                <input type="number" name="q1ans" id="ans" placeholder="Code">
+                <br> 
+                <button type="button" onclick="myFunction()">Next </button>
+                <p id="wrongtext"></p>
+            </form>
+        </section>
+    </section>
+
+    <script>
+        function myFunction() {
+            var x, text;
+            var wrongArray = ["You did not find it, did you? Try again!", "Nice try but no. Try again!", "Seriously? Try again!", "Nah man. Try again!", "Hay bruh you're not doing this right. Try again!", "Dude you gotta look for the code. Try again!", "Not so easy, huh? Try again!"];
+            
+            x = document.getElementById("ans").value;
+            
+            if (x == 789) {
+                window.location.href = "pagetwo.html";
+                text = " ";
+            } else if (x == "") {
+                text = "Hey please enter an answer!"
+                window.alert(text);    
+            } else {
+                text = wrongArray[Math.floor(Math.random()*wrongArray.length)];
+                window.alert(text);    
+            } /*document.getElementById("wrongtext").innerHTML = text;*/
+        }
+
+    </script>
+</body>
