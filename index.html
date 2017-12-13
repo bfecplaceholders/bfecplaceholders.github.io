@@ -21,41 +21,21 @@
     </section>
 
     <section class="container">
-        <p class="text">
-            Around 2000 years ago, God sent the angel Gabriel to Mary. Mary was a virgin engaged to marry Joseph. The angel said to her, 'God has given you a baby boy, and you will call him Jesus. He will be God's own Son and his kingdom will never end.' At the same time, Joseph had to go register at a town called Bethlehem in Judea. So Joseph and Mary made a long journey to Bethlehem, and Mary was pregnant with Jesus.
-        </p>
-
         <section class="userinput">
             <form onsubmit="return false;">
-                <h2>
-                    <strong>Find Jesus as an unborn baby in Mary's womb.</strong>
+                <h2 class="introheader">
+                    Welcome to Where's Jesus!
                 </h2>
-                <input type="number" name="q1ans" id="ans" placeholder="Code">
-                <br> 
-                <button type="button" onclick="myFunction()">Next </button>
-                <p id="wrongtext"></p>
+                <p class="introtext">
+                    Since it is Christmas, let's try to find out what the reason is behind this season. We will be trying to tell the Christmas story and your job is to find the numbers closest to the scene which describes where Jesus was.
+                </p>
+                <button type="button" onclick="startGame()">Next</button>
             </form>
         </section>
     </section>
-
     <script>
-        function myFunction() {
-            var x, text;
-            var wrongArray = ["You did not find it, did you? Try again!", "Nice try but no. Try again!", "Seriously? Try again!", "Nah man. Try again!", "Hay bruh you're not doing this right. Try again!", "Dude you gotta look for the code. Try again!", "Not so easy, huh? Try again!"];
-            
-            x = document.getElementById("ans").value;
-            
-            if (x == 789) {
-                window.location.href = "pagetwo.html";
-                text = " ";
-            } else if (x == "") {
-                text = "Hey please enter an answer!"
-                window.alert(text);    
-            } else {
-                text = wrongArray[Math.floor(Math.random()*wrongArray.length)];
-                window.alert(text);    
-            } /*document.getElementById("wrongtext").innerHTML = text;*/
+        function startGame() {
+            window.location.href = "pageone.html";
         }
-
     </script>
 </body>

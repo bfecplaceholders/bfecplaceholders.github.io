@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="main.css">
     <!-- website icon -->
     <link rel="icon" href="icon.ico" type="image/ico" sizes="16x16">
+    
 </head>
-
 <body>
     <section>
         <header>
@@ -24,15 +24,21 @@
         <section class="userinput">
             <form onsubmit="return false;">
                 <p class="text">
-                    At about that time, the Wise Men from the faraway lands arrived in Jerusalem, asking, "Where is the new-born King of the Jews? For we have seen his star in far-off eastern lands and have come to worship him" There was a prophecy which sai the Saviour would be born in Bethlemen, so the Wise Men went there.
+                    Around 2000 years ago, God sent the angel Gabriel to Mary, who was a virgin engaged to marry Joseph.
                 </p>
                 <p class="text">
-                    Look! The star appeared to them again, standing over Bethlehem. They were so joyful! Entering the house where Jesus was, they threw themselves down to worship him. Then they opened their presents and gave him gold, frankincense, and myrrh.
+                    The angel said to her, 'God has given you a baby boy, and you will call him Jesus. He will be God's own Son and his kingdom will never end.'
+                </p>
+                <p class="text">
+                    At the same time, Joseph had to go register at a town called Bethlehem in Judea. 
+                </p>
+                <p class="text">
+                    So Joseph and Mary made a long journey to Bethlehem, and Mary was pregnant with Jesus.
                 </p>
                 <h2>
-                    <strong>Find Jesus who was worshipped and acknowledged by the wise men as the "King of the Jews".</strong>
+                    <strong>Find Jesus as an unborn baby in Mary's womb.</strong>
                 </h2>
-                <input type="number" name="q4ans" id="ans" placeholder="Code">
+                <input type="number" name="q1ans" id="ans" placeholder="Code">
                 <br> 
                 <button type="button" onclick="myFunction()">Next </button>
                 <p id="wrongtext"></p>
@@ -43,12 +49,12 @@
     <script>
         function myFunction() {
             var x, text;
-             var wrongArray = ["Nope. Try again!", "Nah man. Try again!", "Are you at the right place? Try again!"];
+            var wrongArray = ["Nope. Try again!", "Nah man. Try again!", "Are you at the right place? Try again!"];
             
             x = document.getElementById("ans").value;
             
-            if (x == 10) {
-                window.location.href = "pagefive.html";
+            if (x == 04) {
+                window.location.href = "pagetwo.html";
                 text = " ";
             } else if (x == "") {
                 text = "Hey please enter an answer!"

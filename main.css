@@ -33,13 +33,8 @@ ul {
 }
 
 @font-face {
-    font-family: "Montserrat-Regular";  
-    src: url("fonts/Montserrat-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Montserrat-Medium";  
-    src: url("fonts/Montserrat-Medium.ttf");
+    font-family: "OpenSans-Regular";  
+    src: url("fonts/OpenSans-Regular.ttf");
 }
 
 header {
@@ -47,7 +42,7 @@ header {
     font-size: 45px;
     padding-left: 5%;
     padding-top: 5%;
-    padding-right: 5%;
+    padding-right: 5%; 
 }
 
 .title {
@@ -55,15 +50,20 @@ header {
     width: 50%;
     font-size: 70%;
     text-align: right;
-    padding-top: 10%
+    padding-top: 10%;
+    text-shadow: 0 3px 6px rgba(255,255,255,0.25), 0 3px 6px rgba(255,255,255,0.25);
 }
 
 .logo {
     width: 125px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-left: 2%;
 }
 
 body {
-    font-family: "Montserrat-Regular";
+    font-family: "OpenSans-Regular";
+    background-image: url(back.png);
+    background-repeat: no-repeat;
 }
 
 .text {
@@ -72,14 +72,26 @@ body {
     margin-bottom: 3%;
     padding: 2%;
     text-align: justify;
-    font-size: 100%;
+    font-size: 100%;    
+}
+
+.introheader {
+    padding-bottom: 2%;
+}
+
+.introtext {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    
 }
 
 form {
+    background: white;
     margin: auto;
     box-sizing: border-box;
     width: 90%;
-    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     padding-bottom: 40px;border-radius: 3px;
     h1 {
         box-sizing: border-box;
@@ -96,14 +108,15 @@ form {
 
 
 .userinput h2 {
-    font-family: "Montserrat-Regular";
-    margin-left: 3%;
-    margin-right: 3%;
+    font-family: "OpenSans-Regular";
+    margin-left: 5%;
+    margin-right: 5%;
     padding-top: 3%;
     font-size: 100%;
     text-align: justify;
     -moz-text-align-last: center;
     text-align-last: center;
+    padding: 2%;
 }
 
 .userinput input {
