@@ -64,12 +64,14 @@ body {
     font-family: "OpenSans-Regular";
     background-image: url(back.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text {
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     padding: 2%;
     text-align: justify;
     font-size: 100%;    
@@ -123,7 +125,15 @@ form {
     margin-top: 5%;
     border: none;
     border-bottom: 1px solid black;
-    padding: 2%;
+    padding: 3%;
+}
+
+.userinput::-webkit-input-placeholder {
+    font-size: 100%;
+}
+
+.userinput::placeholder {
+    font-size:100%;
 }
 
 .userinput input:focus {
